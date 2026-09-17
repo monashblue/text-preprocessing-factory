@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Text Preprocessing Factory</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">The Text Preprocessing Factory</h1>
+    
+    <div class="stats-bar">
+      <div>Skor: <span id="score">0</span></div>
+      <div>Nyawa: <span id="lives">3</span></div>
+    </div>
+
+    <div class="game-area">
+      <img src="robot.png" alt="Robot Pekerja" class="robot-character">
+      <div class="conveyor-belt">
+        <div id="display-text" class="display-text">Klik Mulai Permainan untuk bermain</div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button id="btn-tokenize" disabled>Tokenizing</button>
+      <button id="btn-stopword" disabled>Stopword Removal</button>
+      <button id="btn-stemming" disabled>Stemming</button>
+    </div>
+
+    <button id="btn-start" class="btn-primary">Mulai Permainan</button>
+
+    <div class="leaderboard-section">
+      <h2 class="subtitle">Papan Peringkat Top 10</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Peringkat</th>
+            <th>Nama</th>
+            <th>Skor</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+          <tr><td colspan="3">Memuat data</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="game-over-modal" class="modal">
+    <div class="modal-content">
+      <h2 class="subtitle">Permainan Selesai</h2>
+      <p>Skor Akhir Anda: <span id="final-score">0</span></p>
+      <input type="text" id="player-name" placeholder="Masukkan nama Anda" maxlength="15">
+      <br>
+      <button id="btn-submit-score" class="btn-primary">Simpan Skor</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
