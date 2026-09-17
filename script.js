@@ -1,4 +1,4 @@
-const SUPABASE_URL = 'https://xsadfzmjfgptipgocfso.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://xsadfzmjfgptipgocfso.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhzYWRmem1qZmdwdGlwZ29jZnNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk2MTAzNzAsImV4cCI6MjEwNTE4NjM3MH0.q1P0w-hwRFL2qJZOMTep8y78Q_-ylQ8bWycfhN_Ps-g';
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
