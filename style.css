@@ -175,3 +175,14 @@ input[type="text"] {
   margin: 15px 0;
   border-radius: 4px;
 }
+
+@media (max-width: 600px) {
+.action-buttons { flex-direction: column }
+.display-text { font-size: 1.2rem }
+.title { font-size: 1.5rem }
+button { width: 100% }
+.stats-bar { flex-direction: column }
+.stats-bar { gap: 10px }
+.stats-bar { font-size: 1rem }
+.robot-character { width: 100px }
+}
